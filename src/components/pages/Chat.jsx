@@ -10,7 +10,7 @@ import {
 import Layout from '../Layout.jsx';
 import { io } from 'socket.io-client';
 
-const base_url = "http://localhost:4000";
+const base_url = "https://chat-backend-nu-puce.vercel.app";
 
 // Initialize socket outside the component to prevent multiple connections on re-render
 const socket = io(base_url);
