@@ -16,7 +16,7 @@ const Dashboard = () => {
             textAlign: 'center'
           }}
         >
-          <Typography variant="h4" sx={{ mb: 2, fontWeight: 500 }}>
+          <Typography variant="h5" sx={{ mb: 2, fontWeight: 500 }}>
             Welcome to the Dashboard
           </Typography>
           <Typography color="text.secondary">

@@ -19,7 +19,8 @@ const Layout = ({ children, title = 'Dashboard', showAppBar = true }) => {
             sx={{
               bgcolor: '#fff',
               color: '#000',
-              boxShadow: '0 1px 4px rgba(0,0,0,0.1)',
+              boxShadow: '0 2px 4px rgba(0,0,0,1)',
+              borderBottom: '1px solid #e0e0e0',
             }}
           >
             <Toolbar sx={{ justifyContent: 'space-between' }}>
@@ -30,7 +31,7 @@ const Layout = ({ children, title = 'Dashboard', showAppBar = true }) => {
                     <NotificationsIcon />
                   </Badge>
                 </IconButton>
-                <Avatar sx={{ bgcolor: 'primary.main' }}>JD</Avatar>
+                <Avatar sx={{ bgcolor: 'primary.main' }}>HD</Avatar>
               </Box>
             </Toolbar>
           </AppBar>
@@ -38,20 +39,18 @@ const Layout = ({ children, title = 'Dashboard', showAppBar = true }) => {
         }
         <Box
           sx={{
-            flexGrow: 1,
+            flex: 1,
             width: '100%',
             bgcolor: '#fff',
-            overflow: 'auto',
             display: 'flex',
-            flexDirection: 'column',
-            p: 3,
+            flexDirection: 'column'
           }}
         >
           {children}
         </Box>
 
       </Box>
-    </Box>
+    </Box >
   );
 };
 

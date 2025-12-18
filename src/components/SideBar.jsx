@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Drawer, Box, Typography, Avatar, Chip, useMediaQuery, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import { LayoutDashboard, Users, FileText, BarChart3, Settings, ChevronDown, ChevronRight, Bell, HelpCircle, LogOut, Package, ShoppingCart, Layers, MessageSquare } from 'lucide-react'
+import { LayoutDashboard, Users, FileText, Settings, ChevronDown, ChevronRight, Bell, HelpCircle, LogOut, Package, ShoppingCart, Layers, MessageSquare, MessageCircleDashed } from 'lucide-react'
 
 const drawerWidth = 280
 
@@ -19,7 +19,7 @@ export default function SideBar() {
 
   const menu = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, to: '/' },
-    { id: 'analytics', label: 'Analytics', icon: BarChart3, to: '/analytics', badge: 'New' },
+    { id: 'chat', label: 'Chat', icon: MessageCircleDashed, to: '/chat' },
     {
       id: 'products', label: 'Products', icon: Package,
       children: [
